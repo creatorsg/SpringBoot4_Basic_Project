@@ -13,6 +13,4 @@ public interface CustomerRepository extends JpaRepository<Customer,Long> {
 
     //2. customerName(고객명, 중복허용함)로 조회하는 finder 메서드 % name %
     List<Customer> findByCustomerNameContains(String customerName);
-
-
 }
